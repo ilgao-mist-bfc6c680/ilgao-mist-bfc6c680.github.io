@@ -1,0 +1,1098 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>每日乱斗官网-乱斗游戏怎么玩_乱斗模式推荐_乱斗排行对比</title>
+  <meta name="description" content="每日乱斗官网提供乱斗游戏玩法解析、每日模式推荐、乱斗排行对比与新手入门指引，适合喜欢快节奏对战与休闲竞技的玩家查看每日更新与深度攻略。">
+  <meta name="keywords" content="乱斗游戏,每日模式,对战玩法,乱斗排行,新手攻略">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23e8590c'/%3E%3Cpath d='M8 20l4-8 4 6 4-10 4 12' stroke='%23fff' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+  <style>
+    :root{
+      --primary:#e8590c;
+      --primary-dark:#c94a08;
+      --primary-light:#fff0e6;
+      --accent:#1c7ed6;
+      --accent-light:#e7f1fb;
+      --ink:#1a1a2e;
+      --ink-2:#3d3d5c;
+      --ink-3:#6b6b85;
+      --bg:#f7f5f2;
+      --panel:#ffffff;
+      --border:#e5e0da;
+      --radius:10px;
+      --shadow:0 2px 10px rgba(30,20,10,.06);
+      --shadow-lg:0 6px 24px rgba(30,20,10,.1);
+      --announce-h:36px;
+      --header-h:60px;
+      --sticky-offset:calc(var(--announce-h) + var(--header-h) + 12px);
+      --font:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:var(--font);
+      background:var(--bg);
+      color:var(--ink);
+      line-height:1.7;
+      font-size:15px;
+      -webkit-font-smoothing:antialiased;
+    }
+    a{color:inherit;text-decoration:none}
+    ul,ol{list-style:none}
+    img,svg{display:block;max-width:100%}
+    button{font-family:inherit;cursor:pointer;border:none;background:none;font-size:inherit}
+    :focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+    .wrap{max-width:1320px;margin:0 auto;padding:0 20px}
+
+    /* ===== 吸顶公告条 ===== */
+    .announce{
+      position:sticky;top:0;z-index:100;
+      height:var(--announce-h);
+      background:linear-gradient(90deg,var(--primary),#f08c00);
+      color:#fff;font-size:13px;
+      display:flex;align-items:center;
+    }
+    .announce .wrap{display:flex;align-items:center;gap:10px;white-space:nowrap;overflow:hidden}
+    .announce .tag{
+      background:rgba(255,255,255,.22);padding:1px 8px;border-radius:20px;
+      font-size:11px;font-weight:600;letter-spacing:.5px;flex-shrink:0;
+    }
+    .announce .txt{overflow:hidden;text-overflow:ellipsis}
+    .announce .txt b{font-weight:700}
+
+    /* ===== 吸顶页头 ===== */
+    .site-header{
+      position:sticky;top:var(--announce-h);z-index:99;
+      height:var(--header-h);
+      background:rgba(255,255,255,.96);
+      backdrop-filter:blur(8px);
+      border-bottom:1px solid var(--border);
+      box-shadow:0 1px 0 rgba(0,0,0,.02);
+    }
+    .site-header .wrap{display:flex;align-items:center;height:100%;gap:28px}
+    .brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+    .brand-logo{width:34px;height:34px;flex-shrink:0}
+    .brand-name{
+      font-size:20px;font-weight:800;letter-spacing:.5px;
+      color:var(--ink);
+    }
+    .brand-name em{color:var(--primary);font-style:normal}
+    .header-nav{display:flex;gap:22px;font-size:14px;font-weight:500;color:var(--ink-2)}
+    .header-nav a{padding:4px 0;border-bottom:2px solid transparent;transition:.2s}
+    .header-nav a:hover{color:var(--primary);border-bottom-color:var(--primary)}
+    .header-search{
+      margin-left:auto;display:flex;align-items:center;gap:8px;
+      background:var(--bg);border:1px solid var(--border);border-radius:22px;
+      padding:5px 6px 5px 16px;min-width:200px;transition:.2s;
+    }
+    .header-search:focus-within{border-color:var(--primary);background:#fff}
+    .header-search input{
+      border:none;background:none;outline:none;font-size:13px;width:100%;color:var(--ink);
+    }
+    .header-search input::placeholder{color:var(--ink-3)}
+    .header-search button{
+      background:var(--primary);color:#fff;border-radius:16px;
+      padding:4px 12px;font-size:12px;font-weight:600;flex-shrink:0;transition:.2s;
+    }
+    .header-search button:hover{background:var(--primary-dark)}
+
+    /* ===== 首屏 ===== */
+    .hero{
+      background:
+        radial-gradient(ellipse 80% 120% at 85% 0%,rgba(232,89,12,.12),transparent 60%),
+        radial-gradient(ellipse 60% 100% at 10% 100%,rgba(28,126,214,.08),transparent 55%),
+        linear-gradient(180deg,#fffdfb,#f7f5f2);
+      border-bottom:1px solid var(--border);
+      overflow:hidden;
+    }
+    .hero .wrap{
+      display:grid;grid-template-columns:1fr 380px;gap:40px;
+      align-items:center;padding-top:44px;padding-bottom:44px;
+    }
+    .hero-eyebrow{
+      display:inline-flex;align-items:center;gap:8px;
+      background:var(--primary-light);color:var(--primary-dark);
+      font-size:12px;font-weight:700;letter-spacing:.5px;
+      padding:5px 14px;border-radius:20px;margin-bottom:18px;
+    }
+    .hero-eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--primary);animation:pulse 1.6s infinite}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+    .hero h1{
+      font-size:clamp(30px,4vw,46px);line-height:1.2;font-weight:900;
+      letter-spacing:1px;color:var(--ink);margin-bottom:16px;
+    }
+    .hero h1 em{color:var(--primary);font-style:normal}
+    .hero-desc{
+      font-size:15px;color:var(--ink-2);max-width:520px;line-height:1.85;margin-bottom:24px;
+    }
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;align-items:center;gap:7px;
+      padding:10px 24px;border-radius:26px;font-size:14px;font-weight:700;
+      transition:.2s;border:2px solid transparent;
+    }
+    .btn-primary{background:var(--primary);color:#fff;box-shadow:0 4px 14px rgba(232,89,12,.28)}
+    .btn-primary:hover{background:var(--primary-dark);transform:translateY(-1px)}
+    .btn-ghost{background:#fff;color:var(--ink-2);border-color:var(--border)}
+    .btn-ghost:hover{border-color:var(--primary);color:var(--primary)}
+    .hero-stats{
+      display:flex;gap:28px;margin-top:30px;padding-top:22px;border-top:1px dashed var(--border);
+    }
+    .hero-stats .stat b{display:block;font-size:22px;font-weight:800;color:var(--primary)}
+    .hero-stats .stat span{font-size:12px;color:var(--ink-3)}
+    .hero-visual{position:relative;display:flex;justify-content:center}
+    .hero-visual svg{width:100%;max-width:360px;height:auto;filter:drop-shadow(0 12px 32px rgba(232,89,12,.16))}
+
+    /* ===== 三栏布局 ===== */
+    .layout{
+      display:grid;
+      grid-template-columns:170px minmax(0,1fr) 250px;
+      gap:28px;
+      padding:32px 0 48px;
+      align-items:start;
+    }
+
+    /* 左栏 */
+    .col-left{position:sticky;top:calc(var(--sticky-offset));font-size:13px}
+    .side-block{margin-bottom:24px}
+    .side-title{
+      font-size:12px;font-weight:800;letter-spacing:1.5px;color:var(--ink-3);
+      text-transform:uppercase;margin-bottom:10px;padding-left:2px;
+    }
+    .side-nav a{
+      display:flex;align-items:center;gap:8px;
+      padding:7px 10px;border-radius:8px;color:var(--ink-2);
+      font-weight:500;transition:.15s;margin-bottom:2px;
+    }
+    .side-nav a::before{
+      content:"";width:6px;height:6px;border-radius:2px;background:var(--border);
+      flex-shrink:0;transition:.15s;
+    }
+    .side-nav a:hover{background:var(--primary-light);color:var(--primary-dark)}
+    .side-nav a:hover::before{background:var(--primary)}
+    .side-nav .count{
+      margin-left:auto;font-size:11px;color:var(--ink-3);
+      background:var(--bg);border-radius:10px;padding:0 7px;
+    }
+    .tag-cloud{display:flex;flex-wrap:wrap;gap:6px}
+    .tag-cloud a{
+      font-size:12px;padding:4px 10px;border-radius:14px;
+      background:var(--panel);border:1px solid var(--border);
+      color:var(--ink-2);transition:.15s;
+    }
+    .tag-cloud a:hover{border-color:var(--primary);color:var(--primary);background:var(--primary-light)}
+
+    /* 中栏 */
+    .col-main{min-width:0}
+    .section{
+      background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);
+      padding:26px 28px;margin-bottom:24px;box-shadow:var(--shadow);
+      scroll-margin-top:var(--sticky-offset);
+    }
+    .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:20px}
+    .section-head h2{
+      font-size:20px;font-weight:800;letter-spacing:.3px;color:var(--ink);
+      position:relative;padding-left:14px;line-height:1.3;
+    }
+    .section-head h2::before{
+      content:"";position:absolute;left:0;top:4px;bottom:4px;width:4px;
+      border-radius:2px;background:linear-gradient(180deg,var(--primary),#f08c00);
+    }
+    .section-head .sub{font-size:12px;color:var(--ink-3);margin-top:4px;padding-left:14px}
+    .section-head .more{font-size:13px;color:var(--primary);font-weight:600;white-space:nowrap}
+    .section-head .more:hover{text-decoration:underline}
+
+    /* 简介 */
+    .intro-text p{margin-bottom:12px;color:var(--ink-2);font-size:14.5px}
+    .intro-text p:last-child{margin-bottom:0}
+    .intro-text strong{color:var(--primary-dark);font-weight:700}
+    .intro-text .hl{color:var(--ink);font-weight:600}
+
+    /* 热门卡片 */
+    .card-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .card{
+      border:1px solid var(--border);border-radius:var(--radius);
+      padding:16px;background:linear-gradient(180deg,#fff,#fdfbf9);
+      transition:.2s;position:relative;overflow:hidden;
+    }
+    .card:hover{border-color:#f0c4a8;box-shadow:var(--shadow-lg);transform:translateY(-2px)}
+    .card-top{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+    .card-type{
+      font-size:11px;font-weight:700;padding:2px 8px;border-radius:10px;
+      background:var(--primary-light);color:var(--primary-dark);flex-shrink:0;
+    }
+    .card-hot{font-size:11px;color:var(--ink-3);margin-left:auto;display:flex;align-items:center;gap:3px}
+    .card-hot::before{content:"▲";font-size:8px;color:var(--primary)}
+    .card h3{font-size:15px;font-weight:700;line-height:1.4;margin-bottom:6px;color:var(--ink)}
+    .card p{font-size:12.5px;color:var(--ink-3);line-height:1.65;margin-bottom:10px}
+    .card-tags{display:flex;flex-wrap:wrap;gap:5px}
+    .card-tags span{
+      font-size:11px;color:var(--accent);background:var(--accent-light);
+      padding:2px 7px;border-radius:8px;
+    }
+
+    /* 最新更新列表 */
+    .update-list li{
+      display:flex;align-items:flex-start;gap:12px;padding:11px 0;
+      border-bottom:1px dashed var(--border);font-size:14px;
+    }
+    .update-list li:last-child{border-bottom:none;padding-bottom:0}
+    .update-list .dot{
+      width:8px;height:8px;border-radius:50%;background:var(--primary);
+      flex-shrink:0;margin-top:7px;
+    }
+    .update-list .u-name{font-weight:600;color:var(--ink);white-space:nowrap}
+    .update-list .u-desc{color:var(--ink-3);font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .update-list .u-time{margin-left:auto;font-size:12px;color:var(--ink-3);flex-shrink:0}
+
+    /* 分类入口 */
+    .cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+    .cat-item{
+      display:flex;flex-direction:column;align-items:center;gap:6px;
+      padding:16px 8px;border:1px solid var(--border);border-radius:var(--radius);
+      background:var(--panel);transition:.2s;text-align:center;
+    }
+    .cat-item:hover{border-color:var(--primary);background:var(--primary-light);transform:translateY(-2px)}
+    .cat-item .ico{
+      width:38px;height:38px;border-radius:12px;
+      display:flex;align-items:center;justify-content:center;
+      background:linear-gradient(135deg,var(--primary-light),#ffe0cc);
+      font-size:18px;
+    }
+    .cat-item .name{font-size:13px;font-weight:600;color:var(--ink)}
+    .cat-item .num{font-size:11px;color:var(--ink-3)}
+
+    /* 深度正文 */
+    .deep h3{
+      font-size:16.5px;font-weight:800;color:var(--ink);
+      margin:22px 0 10px;padding-bottom:7px;border-bottom:2px solid var(--primary-light);
+    }
+    .deep h3:first-child{margin-top:0}
+    .deep p{font-size:14px;color:var(--ink-2);margin-bottom:12px;line-height:1.85}
+    .deep ul{margin:10px 0 16px;padding-left:0}
+    .deep ul li{
+      position:relative;padding-left:18px;margin-bottom:8px;
+      font-size:13.5px;color:var(--ink-2);line-height:1.75;
+    }
+    .deep ul li::before{
+      content:"";position:absolute;left:2px;top:9px;
+      width:6px;height:6px;border-radius:2px;background:var(--primary);
+    }
+    .deep .tip-box{
+      background:var(--accent-light);border-left:3px solid var(--accent);
+      padding:12px 16px;border-radius:0 8px 8px 0;font-size:13px;
+      color:var(--ink-2);margin:14px 0;
+    }
+
+    /* 体验指南 */
+    .guide-steps{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .guide-step{
+      display:flex;gap:12px;padding:14px;border:1px solid var(--border);
+      border-radius:var(--radius);background:#fdfbf9;
+    }
+    .guide-step .num{
+      width:26px;height:26px;border-radius:8px;background:var(--primary);color:#fff;
+      font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;
+    }
+    .guide-step h4{font-size:13.5px;font-weight:700;margin-bottom:3px}
+    .guide-step p{font-size:12.5px;color:var(--ink-3);line-height:1.6}
+
+    /* FAQ */
+    .faq-item{
+      border:1px solid var(--border);border-radius:var(--radius);
+      margin-bottom:10px;overflow:hidden;background:#fdfbf9;
+    }
+    .faq-item summary{
+      padding:14px 18px;font-size:14px;font-weight:600;color:var(--ink);
+      cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;
+      transition:.15s;
+    }
+    .faq-item summary::-webkit-details-marker{display:none}
+    .faq-item summary::before{
+      content:"?";width:20px;height:20px;border-radius:50%;
+      background:var(--primary-light);color:var(--primary-dark);
+      font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;
+      flex-shrink:0;
+    }
+    .faq-item summary::after{
+      content:"+";margin-left:auto;font-size:18px;font-weight:300;color:var(--ink-3);
+      transition:.2s;
+    }
+    .faq-item[open] summary{background:var(--primary-light);color:var(--primary-dark)}
+    .faq-item[open] summary::after{transform:rotate(45deg)}
+    .faq-item .answer{padding:0 18px 16px 48px;font-size:13.5px;color:var(--ink-2);line-height:1.8}
+
+    /* 评论 */
+    .comment-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    .comment{
+      padding:12px 14px;border-radius:var(--radius);background:#fdfbf9;
+      border:1px solid var(--border);
+    }
+    .comment-head{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+    .avatar{
+      width:24px;height:24px;border-radius:50%;
+      background:linear-gradient(135deg,var(--primary),#f08c00);
+      color:#fff;font-size:11px;font-weight:700;
+      display:flex;align-items:center;justify-content:center;flex-shrink:0;
+    }
+    .comment-head .nick{font-size:12.5px;font-weight:600;color:var(--ink)}
+    .comment-head .time{margin-left:auto;font-size:11px;color:var(--ink-3)}
+    .comment p{font-size:12.5px;color:var(--ink-2);line-height:1.65}
+
+    /* 相关资讯 */
+    .news-list li{padding:12px 0;border-bottom:1px dashed var(--border)}
+    .news-list li:last-child{border-bottom:none;padding-bottom:0}
+    .news-list .news-title{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:3px}
+    .news-list .news-title:hover{color:var(--primary)}
+    .news-list .news-meta{display:flex;gap:10px;align-items:center;font-size:11.5px;color:var(--ink-3);margin-bottom:3px}
+    .news-list .news-meta .date{color:var(--primary-dark);font-weight:600}
+    .news-list .news-summary{font-size:12.5px;color:var(--ink-3);line-height:1.6}
+
+    /* 相关推荐标签 */
+    .rec-tags{display:flex;flex-wrap:wrap;gap:8px}
+    .rec-tags a{
+      display:inline-flex;align-items:center;gap:6px;
+      padding:7px 14px;border-radius:20px;background:var(--bg);
+      border:1px solid var(--border);font-size:13px;font-weight:500;color:var(--ink-2);
+      transition:.2s;
+    }
+    .rec-tags a::before{content:"#";color:var(--primary);font-weight:700}
+    .rec-tags a:hover{background:var(--primary);color:#fff;border-color:var(--primary)}
+    .rec-tags a:hover::before{color:#fff}
+
+    /* 趋势时间线 */
+    .timeline{position:relative;padding-left:18px}
+    .timeline::before{
+      content:"";position:absolute;left:3px;top:4px;bottom:4px;
+      width:2px;background:linear-gradient(180deg,var(--primary),var(--border));
+      border-radius:1px;
+    }
+    .tl-item{position:relative;padding-bottom:16px}
+    .tl-item:last-child{padding-bottom:0}
+    .tl-item::before{
+      content:"";position:absolute;left:-18px;top:4px;
+      width:8px;height:8px;border-radius:50%;background:var(--primary);
+      border:2px solid #fff;box-shadow:0 0 0 2px var(--primary-light);
+    }
+    .tl-item .tl-time{font-size:11px;font-weight:700;color:var(--primary-dark);letter-spacing:.5px}
+    .tl-item .tl-text{font-size:13px;color:var(--ink-2);margin-top:2px;line-height:1.65}
+
+    /* 右栏 */
+    .col-right{position:sticky;top:var(--sticky-offset);font-size:13px}
+    .toc{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:16px;margin-bottom:20px}
+    .toc-title{font-size:12px;font-weight:800;letter-spacing:1.5px;color:var(--ink-3);margin-bottom:10px}
+    .toc a{
+      display:block;padding:5px 0 5px 12px;font-size:12.5px;color:var(--ink-2);
+      border-left:2px solid var(--border);transition:.15s;
+    }
+    .toc a:hover{color:var(--primary);border-left-color:var(--primary);background:var(--primary-light)}
+    .hot-list li{
+      display:flex;align-items:center;gap:10px;padding:9px 0;
+      border-bottom:1px dashed var(--border);font-size:13px;
+    }
+    .hot-list li:last-child{border-bottom:none}
+    .hot-list .rank{
+      width:20px;height:20px;border-radius:6px;background:var(--bg);
+      font-size:11px;font-weight:800;color:var(--ink-3);
+      display:flex;align-items:center;justify-content:center;flex-shrink:0;
+    }
+    .hot-list li:nth-child(1) .rank{background:var(--primary);color:#fff}
+    .hot-list li:nth-child(2) .rank{background:#f08c00;color:#fff}
+    .hot-list li:nth-child(3) .rank{background:#ffd8a8;color:#c94a08}
+    .hot-list .h-name{color:var(--ink-2);font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .hot-list .h-name:hover{color:var(--primary)}
+    .hot-list .h-num{margin-left:auto;font-size:11px;color:var(--ink-3);flex-shrink:0}
+    .read-more-box{
+      background:linear-gradient(135deg,var(--primary-light),#fff);
+      border:1px solid #f5d0b5;border-radius:var(--radius);padding:16px;margin-top:20px;
+    }
+    .read-more-box h4{font-size:13px;font-weight:800;color:var(--primary-dark);margin-bottom:8px}
+    .read-more-box p{font-size:12px;color:var(--ink-3);line-height:1.7;margin-bottom:10px}
+    .read-more-box a{
+      display:inline-block;font-size:12px;font-weight:700;color:#fff;
+      background:var(--primary);padding:6px 16px;border-radius:16px;transition:.2s;
+    }
+    .read-more-box a:hover{background:var(--primary-dark)}
+
+    /* 页尾 */
+    .site-footer{
+      background:#1a1a2e;color:#b8b8d0;padding:40px 0 24px;font-size:13px;
+      border-top:3px solid var(--primary);
+    }
+    .footer-grid{
+      display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px;margin-bottom:30px;
+    }
+    .footer-brand .brand{color:#fff;margin-bottom:10px}
+    .footer-brand .brand-name{color:#fff}
+    .footer-brand p{font-size:12.5px;line-height:1.8;color:#8f8fb0;max-width:280px}
+    .footer-col h4{font-size:13px;font-weight:700;color:#fff;margin-bottom:12px;letter-spacing:.5px}
+    .footer-col a{display:block;font-size:12.5px;color:#9a9ab8;padding:4px 0;transition:.15s}
+    .footer-col a:hover{color:var(--primary)}
+    .footer-bottom{
+      border-top:1px solid rgba(255,255,255,.08);padding-top:18px;
+      display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;
+      font-size:11.5px;color:#6b6b88;
+    }
+    .footer-bottom .sample-note{color:#7a7a9a}
+
+    /* 搜索无结果 */
+    .no-result{
+      display:none;padding:20px;text-align:center;color:var(--ink-3);
+      font-size:14px;background:var(--bg);border-radius:var(--radius);
+    }
+    .no-result.show{display:block}
+
+    /* 平板 */
+    @media(max-width:1080px){
+      .layout{grid-template-columns:1fr 250px}
+      .col-left{display:none}
+      .hero .wrap{grid-template-columns:1fr;gap:24px}
+      .hero-visual{display:none}
+    }
+    @media(max-width:860px){
+      .layout{grid-template-columns:1fr}
+      .col-right{position:static;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+      .toc{grid-column:1/-1}
+      .card-grid{grid-template-columns:1fr}
+      .cat-grid{grid-template-columns:repeat(2,1fr)}
+      .comment-list{grid-template-columns:1fr}
+      .guide-steps{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr 1fr}
+      .header-nav{display:none}
+      .header-search{min-width:0;width:170px}
+    }
+    @media(max-width:520px){
+      .wrap{padding:0 14px}
+      .section{padding:20px 16px}
+      .brand-name{font-size:17px}
+      .header-search{display:none}
+      .col-right{grid-template-columns:1fr}
+      .hero-stats{gap:18px}
+      .footer-grid{grid-template-columns:1fr}
+      .update-list .u-desc{display:none}
+      .hero-actions .btn{padding:9px 18px;font-size:13px}
+    }
+  </style>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="announce" role="region" aria-label="站内公告">
+  <div class="wrap">
+    <span class="tag">上新</span>
+    <span class="txt"><b>今日乱斗轮换已更新</b> · 新增「极速夺旗」与「随机英雄大乱斗」双模式，完成三场即可领取本周限定徽章</span>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="site-header">
+  <div class="wrap">
+    <a href="/#top" class="brand" aria-label="每日乱斗官网首页">
+      <svg class="brand-logo" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <rect width="40" height="40" rx="10" fill="#e8590c"/>
+        <path d="M10 25l5-10 5 7 5-12 5 15" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="31" cy="9" r="3" fill="#ffd8a8"/>
+      </svg>
+      <span class="brand-name">每日乱斗<em>官网</em></span>
+    </a>
+    <nav class="header-nav" aria-label="主导航">
+      <a href="/#hot">今日热门</a>
+      <a href="/#update">模式更新</a>
+      <a href="/#deep">玩法解析</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#news">乱斗资讯</a>
+    </nav>
+    <div class="header-search" role="search">
+      <input type="search" id="siteSearch" placeholder="搜索模式、英雄或攻略" aria-label="站内搜索">
+      <button type="button" id="searchBtn">搜索</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div class="hero-text">
+        <span class="hero-eyebrow">每日轮换 · 快节奏对战</span>
+        <h1 id="hero-title">每日乱斗官网</h1>
+        <p class="hero-desc">每天一个主打模式，三分钟上手、十分钟一局。这里整理乱斗游戏的模式轮换、英雄搭配、排行对比与新手入门路径，帮你在有限时间里挑到最对味的那一局。</p>
+        <div class="hero-actions">
+          <a href="/#hot" class="btn btn-primary">查看今日热门模式</a>
+          <a href="/#guide" class="btn btn-ghost">新手怎么上手</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><b>12</b><span>常驻轮换模式</span></div>
+          <div class="stat"><b>每日</b><span>模式更新频率</span></div>
+          <div class="stat"><b>3-10</b><span>分钟单局时长</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 360 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="20" y="30" width="320" height="240" rx="18" fill="#fff" stroke="#f0d5c2" stroke-width="2"/>
+          <rect x="36" y="48" width="130" height="10" rx="5" fill="#ffe0cc"/>
+          <rect x="36" y="66" width="80" height="8" rx="4" fill="#f5ebe4"/>
+          <rect x="36" y="92" width="140" height="64" rx="10" fill="#fff0e6"/>
+          <circle cx="66" cy="120" r="14" fill="#e8590c"/>
+          <path d="M60 120l4 4 8-8" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="90" y="108" width="70" height="8" rx="4" fill="#f0c4a8"/>
+          <rect x="90" y="124" width="50" height="7" rx="3.5" fill="#f5ebe4"/>
+          <rect x="36" y="168" width="140" height="44" rx="10" fill="#e7f1fb"/>
+          <circle cx="60" cy="190" r="10" fill="#1c7ed6"/>
+          <rect x="78" y="180" width="60" height="7" rx="3.5" fill="#b8d4ef"/>
+          <rect x="78" y="194" width="42" height="6" rx="3" fill="#d5e6f7"/>
+          <rect x="196" y="48" width="128" height="10" rx="5" fill="#ffe0cc"/>
+          <rect x="196" y="66" width="90" height="8" rx="4" fill="#f5ebe4"/>
+          <rect x="196" y="92" width="128" height="34" rx="8" fill="#fdfbf9" stroke="#f0d5c2"/>
+          <rect x="206" y="102" width="60" height="6" rx="3" fill="#f0c4a8"/>
+          <rect x="206" y="114" width="40" height="5" rx="2.5" fill="#f5ebe4"/>
+          <rect x="196" y="136" width="128" height="34" rx="8" fill="#fdfbf9" stroke="#f0d5c2"/>
+          <rect x="206" y="146" width="70" height="6" rx="3" fill="#f0c4a8"/>
+          <rect x="206" y="158" width="46" height="5" rx="2.5" fill="#f5ebe4"/>
+          <rect x="196" y="180" width="128" height="32" rx="8" fill="#fff0e6"/>
+          <rect x="206" y="190" width="56" height="6" rx="3" fill="#e8590c" opacity=".5"/>
+          <rect x="206" y="200" width="36" height="5" rx="2.5" fill="#f0c4a8"/>
+          <circle cx="300" cy="196" r="8" fill="#e8590c"/>
+          <path d="M297 196l2 2 4-4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="20" y="30" width="320" height="240" rx="18" stroke="#e8590c" stroke-width="2" opacity=".15"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 三栏主体 -->
+  <div class="wrap">
+    <div class="layout">
+
+      <!-- 左栏 -->
+      <aside class="col-left" aria-label="频道导航与标签索引">
+        <div class="side-block">
+          <div class="side-title">模式频道</div>
+          <nav class="side-nav" aria-label="左栏频道导航">
+            <a href="/#hot">今日热门模式<span class="count">8</span></a>
+            <a href="/#update">轮换更新日志<span class="count">12</span></a>
+            <a href="/#cat">乱斗类型分类<span class="count">8</span></a>
+            <a href="/#deep">机制深度解析</a>
+            <a href="/#guide">新手体验指南</a>
+            <a href="/#faq">常见问题答疑</a>
+            <a href="/#comments">玩家真实反馈</a>
+            <a href="/#news">乱斗资讯速览</a>
+            <a href="/#rec">相关方向推荐</a>
+            <a href="/#trend">版本趋势观察</a>
+          </nav>
+        </div>
+        <div class="side-block">
+          <div class="side-title">热门标签</div>
+          <div class="tag-cloud">
+            <a href="/#hot">极速夺旗</a>
+            <a href="/#hot">随机英雄</a>
+            <a href="/#hot">三人小队</a>
+            <a href="/#cat">限时乱斗</a>
+            <a href="/#cat">生存混战</a>
+            <a href="/#cat">占点争夺</a>
+            <a href="/#deep">英雄克制</a>
+            <a href="/#deep">装备搭配</a>
+            <a href="/#guide">新手入门</a>
+            <a href="/#faq">单局时长</a>
+            <a href="/#faq">是否免费</a>
+            <a href="/#rec">排行对比</a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- 中栏 -->
+      <div class="col-main">
+
+        <!-- 1. 内容简介 / 平台介绍 -->
+        <section class="section" id="intro">
+          <div class="section-head">
+            <div>
+              <h2>每日乱斗官网内容简介</h2>
+              <div class="sub">读懂轮换规则，挑到适合你的那一局</div>
+            </div>
+          </div>
+          <div class="intro-text">
+            <p><strong>每日乱斗官网</strong>是一个围绕快节奏对战游戏搭建的内容型门户，核心关注每天轮换的乱斗模式、英雄搭配思路与不同玩法之间的差异。很多玩家第一次接触这类游戏时，最常问的是“今天是什么模式”“这个模式适合几个人玩”“和昨晚的模式比哪个更考验操作”，页面内容正是围绕这些真实问题展开。</p>
+            <p>站内把内容拆成几类：<span class="hl">乱斗游戏</span>的基础规则说明，帮助新玩家理解胜负条件与计分方式；<span class="hl">每日模式</span>的轮换预告与当日重点，让玩家提前知道今天该练哪个英雄；<span class="hl">对战玩法</span>的深度解析，覆盖兵线控制、资源争夺、团战站位等常见场景；以及<span class="hl">乱斗排行</span>对比，用同一套评价维度把不同模式放在一起看，减少选择成本。</p>
+            <p>如果你属于碎片时间玩家，每天只有二三十分钟，页面的“今日热门模式”和“轮换更新日志”能帮你快速锁定一两个方向；如果你愿意研究机制，深度解析与趋势观察会给出英雄克制、装备取舍和版本变动带来的连锁影响。所有内容按“先看结论、再看理由”的顺序组织，方便先判断值不值得投入时间，再决定要不要往下读。</p>
+            <p>需要说明的是，站内部分条目为示例数据，用于展示内容结构与阅读节奏，具体模式名称与数值请以游戏内实际版本为准。页面更适合当作选择参考和入门地图，而不是替代完整攻略的百科。</p>
+          </div>
+        </section>
+
+        <!-- 2. 热门内容推荐 -->
+        <section class="section" id="hot">
+          <div class="section-head">
+            <div>
+              <h2>今日热门乱斗模式推荐</h2>
+              <div class="sub">按当日热度与上手难度整理</div>
+            </div>
+            <a href="/#cat" class="more">按类型筛选 →</a>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <div class="card-top">
+                <span class="card-type">限时夺旗</span>
+                <span class="card-hot">热度 9820</span>
+              </div>
+              <h3>极速夺旗：三分钟一局的抢分对决</h3>
+              <p>双方在狭长地图争夺旗帜，击杀不直接得分，回传才是关键。适合喜欢拉扯与支援的玩家。</p>
+              <div class="card-tags"><span>极速夺旗</span><span>支援位</span><span>三分钟</span></div>
+            </article>
+            <article class="card">
+              <div class="card-top">
+                <span class="card-type">随机英雄</span>
+                <span class="card-hot">热度 9140</span>
+              </div>
+              <h3>随机英雄大乱斗：不会玩也要硬上</h3>
+              <p>开局随机分配英雄，考验临场理解与出装应变。老玩家练英雄池的高效方式。</p>
+              <div class="card-tags"><span>随机英雄</span><span>英雄池</span><span>临场应变</span></div>
+            </article>
+            <article class="card">
+              <div class="card-top">
+                <span class="card-type">生存混战</span>
+                <span class="card-hot">热度 8760</span>
+              </div>
+              <h3>毒圈生存战：十人混战最后站着的赢</h3>
+              <p>安全区持续收缩，资源点有限。前期避战还是主动清人，是每局都要重新判断的选择。</p>
+              <div class="card-tags"><span>生存混战</span><span>毒圈</span><span>资源争夺</span></div>
+            </article>
+            <article class="card">
+              <div class="card-top">
+                <span class="card-type">占点争夺</span>
+                <span class="card-hot">热度 8320</span>
+              </div>
+              <h3>三占点拉锯：控制区域比击杀更重要</h3>
+              <p>三个据点同时开放，占领比例决定分数增速。适合有指挥意识的五人小队。</p>
+              <div class="card-tags"><span>占点争夺</span><span>五人小队</span><span>区域控制</span></div>
+            </article>
+            <article class="card">
+              <div class="card-top">
+                <span class="card-type">三人小队</span>
+                <span class="card-hot">热度 7950</span>
+              </div>
+              <h3>三人轮抽赛：每轮换人换位的博弈</h3>
+              <p>每回合从随机池中挑选英雄并交换位置，阵容克制关系被放大，适合有固定队友的玩家。</p>
+              <div class="card-tags"><span>三人小队</span><span>轮抽</span><span>阵容克制</span></div>
+            </article>
+            <article class="card">
+              <div class="card-top">
+                <span class="card-type">限时乱斗</span>
+                <span class="card-hot">热度 7480</span>
+              </div>
+              <h3>无限火力：冷却缩减下的技能对轰</h3>
+              <p>技能冷却大幅降低，节奏极快。适合想放松、体验爽快连招的休闲玩家。</p>
+              <div class="card-tags"><span>无限火力</span><span>冷却缩减</span><span>休闲局</span></div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 3. 最新更新 / 热门动态 -->
+        <section class="section" id="update">
+          <div class="section-head">
+            <div>
+              <h2>轮换更新与热门动态</h2>
+              <div class="sub">近期模式轮换与规则调整记录</div>
+            </div>
+          </div>
+          <ul class="update-list">
+            <li><span class="dot"></span><span class="u-name">极速夺旗</span><span class="u-desc">旗帜回传时间缩短，鼓励更主动的推进</span><span class="u-time">今日</span></li>
+            <li><span class="dot"></span><span class="u-name">随机英雄大乱斗</span><span class="u-desc">英雄池扩充至全量，新增三个冷门角色</span><span class="u-time">今日</span></li>
+            <li><span class="dot"></span><span class="u-name">毒圈生存战</span><span class="u-desc">安全区收缩节奏调整，中后期更紧凑</span><span class="u-time">昨日</span></li>
+            <li><span class="dot"></span><span class="u-name">三占点拉锯</span><span class="u-desc">据点占领读条时间下调，翻盘窗口扩大</span><span class="u-time">昨日</span></li>
+            <li><span class="dot"></span><span class="u-name">三人轮抽赛</span><span class="u-desc">轮抽池加入禁用阶段，博弈层次增加</span><span class="u-time">2 天前</span></li>
+            <li><span class="dot"></span><span class="u-name">无限火力</span><span class="u-desc">回归常驻轮换，每周固定开放两天</span><span class="u-time">2 天前</span></li>
+            <li><span class="dot"></span><span class="u-name">乱斗排行</span><span class="u-desc">评价维度新增“上手速度”一项</span><span class="u-time">3 天前</span></li>
+            <li><span class="dot"></span><span class="u-name">新手引导</span><span class="u-desc">前五局新增模式推荐提示</span><span class="u-time">3 天前</span></li>
+            <li><span class="dot"></span><span class="u-name">装备系统</span><span class="u-desc">部分装备在乱斗模式中数值单独调整</span><span class="u-time">4 天前</span></li>
+            <li><span class="dot"></span><span class="u-name">赛季徽章</span><span class="u-desc">本周完成三场乱斗可领取限定徽章</span><span class="u-time">4 天前</span></li>
+          </ul>
+        </section>
+
+        <!-- 4. 分类入口 -->
+        <section class="section" id="cat">
+          <div class="section-head">
+            <div>
+              <h2>乱斗类型分类入口</h2>
+              <div class="sub">按玩法目标选择你想要的乱斗类型</div>
+            </div>
+          </div>
+          <div class="cat-grid">
+            <a href="/#hot" class="cat-item"><span class="ico">🏁</span><span class="name">夺旗抢分</span><span class="num">3 个模式</span></a>
+            <a href="/#hot" class="cat-item"><span class="ico">🎲</span><span class="name">随机英雄</span><span class="num">2 个模式</span></a>
+            <a href="/#hot" class="cat-item"><span class="ico">🔥</span><span class="name">生存混战</span><span class="num">3 个模式</span></a>
+            <a href="/#hot" class="cat-item"><span class="ico">🚩</span><span class="name">占点争夺</span><span class="num">2 个模式</span></a>
+            <a href="/#hot" class="cat-item"><span class="ico">👥</span><span class="name">小队轮抽</span><span class="num">2 个模式</span></a>
+            <a href="/#hot" class="cat-item"><span class="ico">⚡</span><span class="name">无限火力</span><span class="num">1 个模式</span></a>
+            <a href="/#hot" class="cat-item"><span class="ico">🛡️</span><span class="name">护送推进</span><span class="num">2 个模式</span></a>
+            <a href="/#hot" class="cat-item"><span class="ico">🏆</span><span class="name">排位乱斗</span><span class="num">2 个模式</span></a>
+          </div>
+        </section>
+
+        <!-- 5. 深度解析正文 -->
+        <section class="section deep" id="deep">
+          <div class="section-head">
+            <div>
+              <h2>乱斗模式机制深度解析</h2>
+              <div class="sub">从胜负条件到英雄取舍，拆开看每一局</div>
+            </div>
+          </div>
+
+          <h3>胜负条件决定你该练什么</h3>
+          <p>每日乱斗官网里出现的模式大致可以分成两类：一类以击杀数或存活时间决定胜负，另一类以目标物控制决定胜负。前者更看重个人操作与切入时机，后者更看重团队分工与资源交换。很多玩家抱怨“明明杀得更多却输了”，往往就是把两类模式的优先级搞混了。</p>
+          <p>以极速夺旗为例，击杀只是手段，旗帜回传才是得分来源。这时候一个愿意做视野、卡位掩护的支援位，价值可能高于一个只会追人的输出位。而在毒圈生存战里，前期避战保资源、后期卡圈边打时间差，是更常见的赢法。先确认这一局的胜利条件，再决定英雄与装备，比盲目照搬高分段出装更有效。</p>
+          <div class="tip-box">小提示：进入每日乱斗前先看模式说明页的“胜利条件”一栏，多数连败都源于目标理解偏差，而不是操作差距。</div>
+
+          <h3>英雄克制在乱斗环境里的放大效应</h3>
+          <p>常规对局里，英雄克制可以被经济差和操作弥补；但在乱斗模式中，由于单局时间短、装备成型快，克制关系会被明显放大。尤其是随机英雄大乱斗，一旦拿到被对面阵容天然克制的英雄，正面硬拼往往吃亏，这时候把目标转向带线、控图或拖延时间，反而更容易找到翻盘点。</p>
+          <ul>
+            <li><strong>先看敌方核心：</strong>对方是否有高爆发刺客，决定你后排要不要提前做保命装。</li>
+            <li><strong>再看己方节奏点：</strong>队伍里谁最能带起第一波团，资源就该向谁倾斜。</li>
+            <li><strong>最后看地图空间：</strong>狭长地图适合拉扯和远程消耗，开阔地图更考验突进与分割。</li>
+          </ul>
+          <p>理解克制关系不是为了背一张表，而是为了在选人阶段就想清楚“这局我靠什么赢”。每日乱斗官网的模式解析里，每个模式都会标注常见的强势英雄类型和容易被针对的位置，方便你快速建立判断。</p>
+
+          <h3>装备与资源的取舍逻辑</h3>
+          <p>乱斗模式的经济来源比常规对局更集中，通常来自击杀、目标物和回合奖励。这意味着出装容错更低，前两件装备走错方向，后面很难补回来。一个实用的判断顺序是：先看对面主要伤害类型，再确定防御装的优先级；然后看己方缺的是持续输出还是切入能力，最后才考虑功能性装备。</p>
+          <p>在占点争夺这类模式中，移速与减控装的优先级经常高于纯输出装，因为能否及时赶到据点，比多打几十点伤害更影响胜负。而在生存混战里，回复与视野类装备的价值会随着安全区收缩而上升。装备没有绝对正确答案，关键是和你这一局的目标保持一致。</p>
+
+          <h3>不同模式之间的排行对比怎么看</h3>
+          <p>很多玩家会把“哪个模式最好玩”和“哪个模式上分最快”混在一起问。实际上这两个问题的答案经常相反：节奏快、随机性强的模式娱乐性高，但排名波动也大；规则稳定、目标明确的模式上手慢，却更适合稳定提升。每日乱斗官网的排行对比采用上手速度、平均时长、团队依赖度和翻盘空间四个维度，你可以根据自己每天能投入的时间来选。</p>
+          <ul>
+            <li><strong>时间少、想放松：</strong>优先无限火力或极速夺旗，单局短、反馈快。</li>
+            <li><strong>想练英雄池：</strong>随机英雄大乱斗最直接，被迫使用不熟悉的角色。</li>
+            <li><strong>有固定队友：</strong>三占点拉锯和三人轮抽赛更能发挥配合优势。</li>
+            <li><strong>想稳定提升排名：</strong>选择规则清晰、团队依赖度适中的模式，减少随机因素干扰。</li>
+          </ul>
+          <p>无论选哪个方向，先把自己的目标说清楚，再去看排行，才不会被他人的评价带着走。每日乱斗官网更希望提供的是判断依据，而不是一个固定答案。</p>
+        </section>
+
+        <!-- 6. 体验指南 -->
+        <section class="section" id="guide">
+          <div class="section-head">
+            <div>
+              <h2>新手体验指南</h2>
+              <div class="sub">从第一次打开到找到自己的节奏</div>
+            </div>
+          </div>
+          <div class="guide-steps">
+            <div class="guide-step">
+              <span class="num">1</span>
+              <div><h4>先看今日模式</h4><p>首页热门推荐与轮换日志会标出当天主打模式，先挑一个单局时长你能接受的。</p></div>
+            </div>
+            <div class="guide-step">
+              <span class="num">2</span>
+              <div><h4>确认胜利条件</h4><p>每个模式说明页开头都会写清怎么算赢，避免用上一局的思路打这一局。</p></div>
+            </div>
+            <div class="guide-step">
+              <span class="num">3</span>
+              <div><h4>选一个主力英雄</h4><p>新手阶段先固定一到两个英雄，熟悉技能范围与出装路线，再扩展英雄池。</p></div>
+            </div>
+            <div class="guide-step">
+              <span class="num">4</span>
+              <div><h4>用分类筛选缩小范围</h4><p>左栏标签与分类入口可以按玩法类型、时长、团队人数快速过滤。</p></div>
+            </div>
+            <div class="guide-step">
+              <span class="num">5</span>
+              <div><h4>收藏常看的模式</h4><p>把常玩的模式加入浏览器书签，或记住页内锚点，下次直接跳到对应板块。</p></div>
+            </div>
+            <div class="guide-step">
+              <span class="num">6</span>
+              <div><h4>沿推荐路径扩展</h4><p>看完一个模式后，从“相关推荐”进入相近玩法，逐步建立自己的理解地图。</p></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 7. FAQ -->
+        <section class="section" id="faq">
+          <div class="section-head">
+            <div>
+              <h2>乱斗模式常见问题</h2>
+              <div class="sub">按玩家真实搜索问法整理</div>
+            </div>
+          </div>
+
+          <details class="faq-item" open>
+            <summary>乱斗游戏适合什么人玩？</summary>
+            <div class="answer">适合喜欢短局、快节奏对战的玩家。单局通常在三到十分钟之间，不需要长时间连续投入，碎片时间也能玩上一两局。如果你偏好慢节奏经营或长线养成，这类模式可能反馈来得太急。</div>
+          </details>
+          <details class="faq-item">
+            <summary>每日乱斗一般多久更新一次模式？</summary>
+            <div class="answer">常驻轮换按天更新，部分限时模式会以天为单位开放。具体节奏以游戏内公告为准，站内轮换更新日志会同步记录近期变化，方便你提前安排想玩的模式。</div>
+          </details>
+          <details class="faq-item">
+            <summary>随机英雄大乱斗和普通模式比哪个更难？</summary>
+            <div class="answer">难在不同方面。普通模式可以固定使用熟练英雄，考验的是细节与配合；随机英雄模式强制你面对不熟悉的角色，考验的是临场理解和出装应变。对新手来说随机模式更吃力，对英雄池深的玩家则更轻松。</div>
+          </details>
+          <details class="faq-item">
+            <summary>乱斗模式输了会掉排名吗？</summary>
+            <div class="answer">是否影响排名取决于具体模式。娱乐向乱斗通常不计入正式排名，排位乱斗则会按胜负调整。进入模式前留意说明页标注的“是否计分”，可以避免误判。</div>
+          </details>
+          <details class="faq-item">
+            <summary>单局时间太长怎么办？</summary>
+            <div class="answer">优先选择标注“极速”或“快速”的模式，这类模式通常压缩了资源积累阶段，直接进入对抗。也可以先打一局娱乐模式热身，再决定要不要投入排位。</div>
+          </details>
+          <details class="faq-item">
+            <summary>和好友一起玩选哪个乱斗模式更合适？</summary>
+            <div class="answer">两人组队建议选占点争夺或护送推进，分工明确、沟通成本低；三人以上可以尝试三人轮抽赛，阵容搭配和轮抽博弈更有乐趣。人数越多，越需要提前说好谁负责开团、谁负责保后排。</div>
+          </details>
+        </section>
+
+        <!-- 8. 用户评论 -->
+        <section class="section" id="comments">
+          <div class="section-head">
+            <div>
+              <h2>玩家评论与体验反馈</h2>
+              <div class="sub">来自不同模式偏好的真实语气</div>
+            </div>
+          </div>
+          <div class="comment-list">
+            <div class="comment"><div class="comment-head"><span class="avatar">阿</span><span class="nick">阿七不熬夜</span><span class="time">今天</span></div><p>极速夺旗比想象中吃配合，单排经常各打各的，后来固定跟一个朋友双排，胜率明显上来了。</p></div>
+            <div class="comment"><div class="comment-head"><span class="avatar">小</span><span class="nick">小满冲鸭</span><span class="time">今天</span></div><p>随机英雄模式真的治好了我的英雄池偏科，被迫玩了几把平时不碰的角色，发现没那么难。</p></div>
+            <div class="comment"><div class="comment-head"><span class="avatar">夜</span><span class="nick">夜航船</span><span class="time">昨天</span></div><p>毒圈生存战前期太容易上头，看到人就追，结果资源没搜完就被圈逼死。现在学乖了，先保资源。</p></div>
+            <div class="comment"><div class="comment-head"><span class="avatar">橘</span><span class="nick">橘子汽水</span><span class="time">昨天</span></div><p>三占点拉锯的翻盘空间比想象中大，只要三个点轮流施压，落后二十分也能追回来。</p></div>
+            <div class="comment"><div class="comment-head"><span class="avatar">老</span><span class="nick">老白打游戏</span><span class="time">2 天前</span></div><p>无限火力适合下班放松，但连着打几局会有点腻，节奏太快反而记不住细节。</p></div>
+            <div class="comment"><div class="comment-head"><span class="avatar">柠</span><span class="nick">柠檬不酸</span><span class="time">2 天前</span></div><p>三人轮抽赛的禁用阶段加得好，以前经常被固定套路打崩，现在能针对一下了。</p></div>
+            <div class="comment"><div class="comment-head"><span class="avatar">大</span><span class="nick">大熊座</span><span class="time">3 天前</span></div><p>新手引导提示挺有用，前几局会推荐时长合适的模式，不至于一上来就被拉进高强度局。</p></div>
+            <div class="comment"><div class="comment-head"><span class="avatar">一</span><span class="nick">一只咕咕</span><span class="time">3 天前</span></div><p>说实话排行对比的维度有点多，第一次看不太习惯，但想清楚自己在意什么之后就很好用。</p></div>
+            <div class="comment"><div class="comment-head"><span class="avatar">风</span><span class="nick">风里有诗</span><span class="time">4 天前</span></div><p>装备在乱斗里单独调整这点很关键，照搬常规出装经常翻车，还是得看模式说明。</p></div>
+            <div class="comment"><div class="comment-head"><span class="avatar">海</span><span class="nick">海盐芝士</span><span class="time">4 天前</span></div><p>毒圈生存战的中后期节奏改完之后更紧凑了，以前缩圈太慢容易拖时间。</p></div>
+            <div class="comment"><div class="comment-head"><span class="avatar">默</span><span class="nick">默然看局</span><span class="time">5 天前</span></div><p>希望能多出一点双人模式，现在主要是单排和三人组，两个人玩的选择偏少。</p></div>
+            <div class="comment"><div class="comment-head"><span class="avatar">星</span><span class="nick">星屑收藏家</span><span class="time">5 天前</span></div><p>本周徽章任务三场就完成，门槛不高，对休闲玩家友好。</p></div>
+            <div class="comment"><div class="comment-head"><span class="avatar">慢</span><span class="nick">慢半拍选手</span><span class="time">6 天前</span></div><p>我反应慢，夺旗类模式基本靠意识弥补，卡位和提前回防比硬拼手速有用。</p></div>
+            <div class="comment"><div class="comment-head"><span class="avatar">豆</span><span class="nick">豆包不是包</span><span class="time">6 天前</span></div><p>整体节奏偏快，不太适合想慢慢运营的玩家，但午休打一局刚刚好。</p></div>
+          </div>
+        </section>
+
+        <!-- 9. 相关资讯 -->
+        <section class="section" id="news">
+          <div class="section-head">
+            <div>
+              <h2>乱斗模式相关资讯</h2>
+              <div class="sub">近期规则变动与玩法观察</div>
+            </div>
+          </div>
+          <ul class="news-list">
+            <li>
+              <div class="news-meta"><span class="date">今天</span><span>模式轮换</span></div>
+              <div class="news-title">极速夺旗回传时间缩短，推进型阵容价值上升</div>
+              <div class="news-summary">旗帜回传读条下调后，依赖快速推进与边路支援的阵容更容易在前期建立分差，纯防守思路的收益有所下降。</div>
+            </li>
+            <li>
+              <div class="news-meta"><span class="date">昨天</span><span>英雄池</span></div>
+              <div class="news-title">随机英雄大乱斗英雄池扩容，冷门角色出场率提高</div>
+              <div class="news-summary">本次扩充后，部分长期冷门的角色进入随机池，玩家需要重新评估这些英雄在短局中的定位与出装路线。</div>
+            </li>
+            <li>
+              <div class="news-meta"><span class="date">2 天前</span><span>节奏调整</span></div>
+              <div class="news-title">毒圈生存战缩圈节奏加快，中后期对抗更集中</div>
+              <div class="news-summary">安全区收缩时间整体前移，前期留给玩家搜集资源的时间减少，落地决策的容错率随之降低。</div>
+            </li>
+            <li>
+              <div class="news-meta"><span class="date">3 天前</span><span>排行观察</span></div>
+              <div class="news-title">乱斗排行新增上手速度维度，新模式评价更直观</div>
+              <div class="news-summary">评价体系从三个维度扩展到四个，新手可以更快判断一个模式需要多少学习成本，再决定是否投入。</div>
+            </li>
+            <li>
+              <div class="news-meta"><span class="date">4 天前</span><span>装备调整</span></div>
+              <div class="news-title">部分装备在乱斗模式中单独调整数值</div>
+              <div class="news-summary">由于乱斗模式经济来源更集中，装备数值单独平衡后，常规对局的出装思路不能直接照搬，需要结合模式特点重新取舍。</div>
+            </li>
+            <li>
+              <div class="news-meta"><span class="date">5 天前</span><span>新手引导</span></div>
+              <div class="news-title">新手前五局新增模式推荐提示，降低选择门槛</div>
+              <div class="news-summary">系统会根据玩家已完成的模式类型推荐相近玩法，帮助新玩家逐步扩展模式池，而不是一开始就面对全部轮换列表。</div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- 10. 相关推荐 -->
+        <section class="section" id="rec">
+          <div class="section-head">
+            <div>
+              <h2>按方向找乱斗内容</h2>
+              <div class="sub">从具体玩法词进入，不用逐页翻</div>
+            </div>
+          </div>
+          <div class="rec-tags">
+            <a href="/#hot">极速夺旗阵容搭配</a>
+            <a href="/#hot">随机英雄怎么选装备</a>
+            <a href="/#hot">毒圈生存战运营思路</a>
+            <a href="/#hot">三占点拉锯分工</a>
+            <a href="/#deep">英雄克制关系表</a>
+            <a href="/#deep">乱斗模式时长对比</a>
+            <a href="/#faq">单排适合哪个模式</a>
+            <a href="/#faq">双人组队乱斗推荐</a>
+          </div>
+        </section>
+
+        <!-- 11. 趋势观察 / 时间线 -->
+        <section class="section" id="trend">
+          <div class="section-head">
+            <div>
+              <h2>版本趋势观察时间线</h2>
+              <div class="sub">近期调整对玩法选择的影响</div>
+            </div>
+          </div>
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-time">本周 · 模式轮换</div>
+              <div class="tl-text">夺旗与占点类模式权重上升，短局目标物对抗成为主流，纯击杀模式占比略有下降。</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-time">本周 · 英雄选择</div>
+              <div class="tl-text">随机池扩容后，冷门英雄的使用率上升，围绕功能型角色的阵容开始增多。</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-time">上周 · 装备平衡</div>
+              <div class="tl-text">防御与减控装在乱斗环境中的优先级提高，纯输出出装的容错率下降。</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-time">上周 · 排行体系</div>
+              <div class="tl-text">上手速度纳入评价维度，规则简单、目标明确的模式在对比中更占优势。</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-time">近期 · 玩家偏好</div>
+              <div class="tl-text">碎片时间玩家更倾向标有“极速”的模式，团队玩家则向占点与轮抽类模式集中。</div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- 右栏 -->
+      <aside class="col-right" aria-label="辅助阅读与热门条目">
+        <div class="toc">
+          <div class="toc-title">本页目录</div>
+          <nav aria-label="页内目录">
+            <a href="/#intro">内容简介</a>
+            <a href="/#hot">热门模式推荐</a>
+            <a href="/#update">轮换更新动态</a>
+            <a href="/#cat">类型分类入口</a>
+            <a href="/#deep">机制深度解析</a>
+            <a href="/#guide">新手体验指南</a>
+            <a href="/#faq">常见问题</a>
+            <a href="/#comments">玩家评论</a>
+            <a href="/#news">相关资讯</a>
+            <a href="/#rec">方向推荐</a>
+            <a href="/#trend">趋势观察</a>
+          </nav>
+        </div>
+        <div class="side-block" style="background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:16px;">
+          <div class="side-title" style="margin-bottom:10px;">热门条目</div>
+          <ul class="hot-list">
+            <li><span class="rank">1</span><a href="/#hot" class="h-name">极速夺旗：三分钟抢分</a><span class="h-num">9.8k</span></li>
+            <li><span class="rank">2</span><a href="/#hot" class="h-name">随机英雄大乱斗</a><span class="h-num">9.1k</span></li>
+            <li><span class="rank">3</span><a href="/#hot" class="h-name">毒圈生存战运营</a><span class="h-num">8.8k</span></li>
+            <li><span class="rank">4</span><a href="/#deep" class="h-name">英雄克制关系</a><span class="h-num">8.3k</span></li>
+            <li><span class="rank">5</span><a href="/#faq" class="h-name">单排模式选择</a><span class="h-num">7.9k</span></li>
+            <li><span class="rank">6</span><a href="/#guide" class="h-name">新手入门步骤</a><span class="h-num">7.5k</span></li>
+          </ul>
+        </div>
+        <div class="read-more-box">
+          <h4>延伸阅读</h4>
+          <p>想进一步了解模式之间的差异，可以从深度解析里的排行对比维度开始，再回到具体模式页面看细节。</p>
+          <a href="/#deep">进入机制解析</a>
+        </div>
+        <div class="no-result" id="noResult">没有找到匹配内容，换个关键词试试，例如“夺旗”“生存”“轮抽”。</div>
+      </aside>
+
+    </div>
+  </div>
+
+</main>
+
+<!-- 页尾 -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <svg class="brand-logo" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <rect width="40" height="40" rx="10" fill="#e8590c"/>
+            <path d="M10 25l5-10 5 7 5-12 5 15" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="31" cy="9" r="3" fill="#ffd8a8"/>
+          </svg>
+          <span class="brand-name" style="color:#fff;">每日乱斗<em>官网</em></span>
+        </div>
+        <p>围绕每日轮换的乱斗模式，整理玩法解析、模式对比与新手路径，帮你在有限时间里选对方向。</p>
+      </div>
+      <div class="footer-col">
+        <h4>模式频道</h4>
+        <a href="/#hot">今日热门</a>
+        <a href="/#update">轮换动态</a>
+        <a href="/#cat">类型分类</a>
+        <a href="/#deep">深度解析</a>
+      </div>
+      <div class="footer-col">
+        <h4>玩家帮助</h4>
+        <a href="/#guide">新手指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#comments">玩家评论</a>
+        <a href="/#rec">方向推荐</a>
+      </div>
+      <div class="footer-col">
+        <h4>资讯与观察</h4>
+        <a href="/#news">相关资讯</a>
+        <a href="/#trend">趋势时间线</a>
+        <a href="/#deep">排行对比</a>
+        <a href="/#intro">内容简介</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 每日乱斗官网 · 内容型示例站点</span>
+      <span class="sample-note">部分内容为示例数据，仅用于展示页面结构</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var input = document.getElementById('siteSearch');
+  var btn = document.getElementById('searchBtn');
+  var noResult = document.getElementById('noResult');
+  var sections = document.querySelectorAll('.col-main .section');
+
+  function doSearch(){
+    var q = (input.value || '').trim().toLowerCase();
+    if(!q){
+      sections.forEach(function(s){ s.style.display=''; });
+      noResult.classList.remove('show');
+      return;
+    }
+    var found = false;
+    sections.forEach(function(s){
+      var text = (s.innerText || s.textContent || '').toLowerCase();
+      if(text.indexOf(q) > -1){
+        s.style.display = '';
+        found = true;
+      } else {
+        s.style.display = 'none';
+      }
+    });
+    if(found){
+      noResult.classList.remove('show');
+    } else {
+      noResult.classList.add('show');
+    }
+  }
+
+  if(input && btn){
+    btn.addEventListener('click', doSearch);
+    input.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+    });
+    input.addEventListener('input', function(){
+      if(input.value.trim() === ''){
+        sections.forEach(function(s){ s.style.display=''; });
+        noResult.classList.remove('show');
+      }
+    });
+  }
+})();
+</script>
+
+</body>
+                                                                           </html>
